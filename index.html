@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Antica Pagina Classica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* -------------------------------------------------
+           Typography & Colors – earthy, muted palette
+           ------------------------------------------------- */
+        :root {
+            --bg: #f9f4e8;               /* parchment */
+            --text: #3b2e2a;             /* dark brown */
+            --accent: #7a5c3e;           /* aged copper */
+            --border: #d1c5b4;           /* faded linen */
+            --heading: #5b3e2a;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Garamond", "Palatino Linotype", serif;
+            line-height: 1.6;
+        }
+
+        /* -------------------------------------------------
+           Layout – centered column with subtle borders
+           ------------------------------------------------- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 2rem 3rem;
+        }
+
+        /* -------------------------------------------------
+           Headings – decorative, slightly embossed
+           ------------------------------------------------- */
+        h1, h2, h3 {
+            font-family: "Cinzel", serif;
+            color: var(--heading);
+            margin-top: 1.5rem;
+            margin-bottom: .5rem;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: .3rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        /* -------------------------------------------------
+           Links – ink‑like with gentle hover
+           ------------------------------------------------- */
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent);
+        }
+
+        a:hover {
+            color: var(--heading);
+            border-bottom-style: solid;
+        }
+
+        /* -------------------------------------------------
+           Buttons – wooden‑texture feel
+           ------------------------------------------------- */
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: .6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background: var(--heading);
+        }
+
+        /* -------------------------------------------------
+           Blockquote – scroll‑like parchment
+           ------------------------------------------------- */
+        blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #5a4b44;
+        }
+
+        /* -------------------------------------------------
+           Responsive tweaks
+           ------------------------------------------------- */
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .container { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Benvenuti nella Pagina Antica</h1>
+
+        <p>
+            Questo layout richiama i manoscritti d’epoca: carta pergamenata,
+            caratteri classici e una tavolozza di toni terrosi. È ideale per
+            presentare contenuti storici, racconti o progetti che desiderano
+            evocare un’atmosfera organica e senza tempo.
+        </p>
+
+        <h2>Sezione Principale</h2>
+        <p>
+            Qui puoi inserire il tuo testo principale. Usa <strong>grassetto</strong>
+            per evidenziare concetti chiave e <em>corsivo</em> per citazioni o
+            termini latini.
+        </p>
+
+        <blockquote>
+            “Il passato è un libro che non smette mai di parlare.”
+        </blockquote>
+
+        <h3>Altri Elementi</h3>
+        <ul>
+            <li>Liste puntate con simboli classici</li>
+            <li>Link che sembrano inchiostro su pergamena: <a href="#">Scopri di più</a></li>
+            <li>Pulsanti in stile legno: <a href="#" class="btn">Azioni</a></li>
+        </ul>
+    </div>
+</body>
+</html>
